@@ -1,10 +1,9 @@
 {
   
-  "homepage": "https://cindy-ruet.fr/dfacilities",
   "name": "dfacilities3",
   "version": "0.1.0",
   "private": true,
-  
+  "homepage": "https://cindy-ruet.fr/dfacilities",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -12,6 +11,7 @@
     "aos": "^2.3.4",
     "axios": "^0.24.0",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^4.0.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -27,6 +27,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "deploy":"npm run build&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

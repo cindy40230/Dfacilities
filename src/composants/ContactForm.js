@@ -7,7 +7,6 @@ init("user_3uyaG8UWk8oxBdtTawPXO");
 const ContactForm = () => {
   const [lastName, setLastName] = useState("");
   const [firstName, setFirstName] = useState("");
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
@@ -62,7 +61,8 @@ const ContactForm = () => {
             message,
           },
           // your user ID (protégé par .env)
-          process.env.REACT_APP_EMAILJS_KEY
+          //process.env.REACT_APP_EMAILJS_KEY
+          "167c85339e944a84d0c15faa1c8d6430"
         )
         .then(
           () => {
