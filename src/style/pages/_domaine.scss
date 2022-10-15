@@ -1,0 +1,140 @@
+
+.contente_domaine{
+  display: flex;
+  align-content: center ;
+  width: 100%;
+  box-shadow: 0px 2px 10px 0px rgba(121, 119, 119, 0.78); 
+  height: 80%;
+   margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+.cadre_domaine {
+  position: relative;
+  /* padding: 40px 20px 25px 0; */
+  width: 30%;
+  max-width: 400px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin: 20px 20px 40px 50px;
+  color: #6f0707;
+  text-align: center;
+&:before,&:after{
+  content:'';
+  display:block;
+ 
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 1px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+  z-index:-1;/*tout derriere pour eviter l image qui saute*/
+
+}
+&:before{
+  top: 15px;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  
+}
+
+&:after{
+  bottom: 0px ;
+  right: 15px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+/*quand on agit sur le cadre de before et after*/
+&:hover:before , &:hover:after {
+border-color:#6f0707;
+width: 100%;
+height: 100%;
+}
+
+}
+.Ddomaine{
+  margin: 10%;
+  padding: 15px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ 
+ 
+  img{
+    width: 100%;
+    &:hover{
+      transform: scale(1.2);
+    }
+    
+  }
+  p{
+    font-size: 12px !important;
+    font-weight: 700;
+    text-align: center;
+     padding: 5px;
+  }
+
+}
+}
+
+.domaine_competence{
+  position: relative;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 25px;
+  h4{
+    text-align: center;
+    color:$color-2
+  }
+  ul{
+    
+    padding-left: 50px;
+    padding-top: 40px;
+    color:$color-2;
+    text-align: left;
+    li{
+      list-style: square !important;
+    }
+   
+  }
+  img{
+    float: left;
+    padding: 60px;
+  }
+ }
+
+
+
+
+ @media screen and (max-width: 800px) {
+  .contente_domaine{
+    flex-direction: column;
+    height: auto;
+    .cadre_domaine{
+      margin-top: 50px;
+      width: 80%;
+      margin: 0 auto;   
+      .Ddomaine{
+        img{
+          width: 40%;
+        }
+      }
+      .domaine_competence{
+        text-align: center;
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+
+ }
+
+
+
+

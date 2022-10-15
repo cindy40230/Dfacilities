@@ -1,0 +1,22 @@
+.modalOffre{
+  position: relative;
+.modal{
+  position: absolute;
+  top:-1000%;
+  left:30%;
+  background-color: $color-1;
+  border:1px solid $color-6;
+  box-shadow: 0px 2px 10px 0px rgba(17, 16, 16, 0.78);
+  padding: 15px;
+  width: 260%;
+  height:580px;
+  transition: all 0.3s ease-out;
+  margin: 0 auto;
+  button{
+    position: absolute;
+    top:5px;
+    right:15px;
+    width: 25px;
+  }
+}
+}

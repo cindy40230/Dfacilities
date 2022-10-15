@@ -1,0 +1,53 @@
+.dynamic-text {
+  position: relative;
+  display: flex;
+
+  .simply {
+    color: $color-4;
+   
+    @media screen and (min-width: 200px) and (max-width: 450px) {
+      width: 30%;
+    }
+    @media screen and (min-width: 450px) and (max-width: 800px) {
+     
+    }
+  }
+
+  #text-target {
+    z-index: 100000;
+    display: flex;
+    width: 300px;
+    text-align: left;
+    animation: color 30s alternate infinite;
+    perspective: 200px;
+    transform: translateX(26px);
+    @media screen and (min-width: 200px) and (max-width: 450px) {
+      transform: translateX(0px);
+    }
+  }
+  .word {
+    position: absolute;
+  }
+  @keyframes color {
+    0% {
+      color: $color-2;
+    }
+    
+    100% {
+      color: $color-2;
+    }
+  }
+  .letter {
+    transform: translateZ(200px);
+  }
+  @keyframes anim {
+    25% {
+      transform: translateZ(0px);
+      opacity: 1;
+    }
+    32% {
+      opacity: 0;
+      transform: translateZ(-280px) translateX(200px);
+    }
+  }
+}

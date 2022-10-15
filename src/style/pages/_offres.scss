@@ -1,0 +1,235 @@
+.offres {
+  .header-offre {
+    // max-width: 1280px;
+    img{
+      width: 100%;
+    }
+  } 
+.offres-annonces {
+  height: auto;
+  margin: 80px 0;
+  padding: 20px 100px;
+  background-color: $color-1;
+  h2 {
+    color: black;
+    font-weight: 100;
+    span {
+      color: $color-2;
+    }
+  }
+  .contact_offre{
+    margin: 20px;
+  }
+  .annonces {
+
+    margin-top: 50px;
+    .annonce {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 20px auto;
+      padding: 15px;
+      box-shadow: 1px 1px 8px $color-4;
+      
+      .annonce-body{
+        width: 80%;
+        padding: 10px;
+        a{
+          text-decoration: none;   
+        h2{
+          font-size:16px ;
+          font-weight: bold;
+          padding: 5px;
+          color: $color-2;
+        }
+        p {
+          padding: 0;
+          box-shadow:none;
+        }
+        .offre_contrat{
+          text-align: center;
+        }
+        .annonce-subtext,.date{
+          color: $color-4;
+          margin: 10px;
+        }
+        .annonce-description{
+          color: $color-2;
+          margin: 10px;
+        }
+       
+      }
+    }
+     .annonce-right{
+      width: 20%;
+      color:$color-4;
+      align-items: center;
+      p {
+        padding: 0;
+        box-shadow:none;
+        text-align: center;
+      }
+     }
+    
+      
+     
+    }
+  }
+}
+
+}
+@media (max-width: 767px) {
+  
+  .annonces {
+    width: 100% !important;
+    .annonce {
+      flex-direction: column;
+      .annonce-right{
+        color: $color-2 !important;
+      }
+    }}
+  
+}
+
+
+.offre{
+  width: 80%;
+  display:flex;
+
+  .offre_aside{
+    margin: 20px;
+    width: 30%;
+    height: 100%;
+    h1{
+      width: 100%;
+      padding: 15px;
+      color:$color-1;
+      background-color: $color-2;
+      text-align: center;
+    }
+    .offre_lieu{
+      padding: 15px;
+      text-align: center;
+      i{
+        padding: 25px;
+        font-size: 25px;
+        color:$color-2;
+      }
+    }
+    button,a{
+      display: block;
+      margin: 15px auto 0px;
+      width: 80%;
+      border-radius: 0px;
+      border: 1px $color-2 solid;
+      background-color: $color-1;
+      color:$color-2;
+      font-size: 16px;
+      font-weight: 600;
+      &:hover{
+        background-color: $color-2;
+        color:$color-1;
+      }
+    }
+    .offre_contrat_salaire{
+      display:flex;
+      justify-content: space-around;
+      margin: 50px;
+      //box-shadow: ;
+      p {
+       text-align: center;
+       color:$color-2;
+       i{
+        padding: 25px;
+        font-size: 25px;
+       
+      }
+
+      }
+     
+
+    }
+  }
+  .offre_content{
+    width: 60%;
+    margin: 20px;
+   h2{
+     color: $color-2;
+     font-size: 30px;
+   }
+   .offre_tarif_date{
+    display: flex;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    border-color: $color-6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px 0px 0px 0px;
+    justify-content: space-around;
+    div{
+      text-align: center;
+    h3{
+      font-size: 12px;
+      color:$color-4;
+      padding: 10px;
+    }
+    p{
+      padding: 15px;
+      color: $color-2;
+      font-size: 16px;
+      font-weight: 600;
+    }
+   
+  }
+
+   }
+   .offre_description{
+    p{
+      color: #5C6773; 
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: none;
+      line-height: 34px;
+      text-align: left;}
+    
+}
+   
+  }
+}
+@media (max-width: 767px) {
+  .offres{
+    .offres-annonces{
+      padding: 0;
+    }
+  }
+  
+  .offre{
+    .modalOffre{
+    button{
+      font-size: 12px;
+      padding: 5px !important;
+    }
+  }
+    h1{
+      font-size: 14px;
+    }
+    .offre_content{
+      h2{
+        font-size:14px ;
+      }
+    }
+    .offre_aside{
+      .offre_contrat_salaire{
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+      }
+      a{
+        font-size: 12px;
+      padding: 5px !important;
+      }
+    }
+   
+  }
+  
+}

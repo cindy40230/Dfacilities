@@ -1,0 +1,67 @@
+.contact-form_offre {
+  p {
+    margin: 25px;
+    color: $color-4;
+  }
+  h3{
+    margin: 25px;
+    color: $color-2;
+    font-size:34px ;
+  }
+  .btn_submit{
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px $color-2 solid;
+    background-color: $color-1;
+    color:$color-2;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 3% ;
+    width: 30%;
+    &:hover{
+      background-color: $color-2;
+      color:$color-1;
+    }
+  }
+
+  .form-content-offre {
+    display: flex;
+    flex-direction: column;
+    label{
+      padding: 10px;
+      width: 18%;
+      span{
+        color:red;
+      }
+    }
+    input[type='text'],
+    input[type='mail'],  
+    input[type='tel']
+    
+    {
+      width: 30%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 8px 12px;
+      border: 1px solid #ebeced;
+      background-color: #fff;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+    }
+
+   
+    
+      #not-mail {
+        display: none;
+        position: absolute;
+        top: 8px;
+        color: $red;
+        right: 0;
+        transform-origin: 50% 50%;
+      } 
+  .form-content-last-first{
+    margin: 25px;
+    display: flex;
+  }
+}
+}
