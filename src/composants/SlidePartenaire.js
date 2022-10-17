@@ -9,6 +9,9 @@ import { getPartenaires } from "../redux/partenaires/partenaireReducer";
 import Resovalie from '../assets/images/resovalie_Logo-business-club.png';
 import Fep from '../assets/images/FEP_CSO.png';
 import Lsm from '../assets/images/logo_LSM.png';
+import ATSE from '../assets/images/ATSE_logo.png';
+import USTyrosse from '../assets/images/us_rugby.png';
+import AVIRON from '../assets/images/AVIRON.png';
 export default function SlidePartenaire() {
 
   const { partenaires } = useSelector((state) => ({
@@ -138,6 +141,90 @@ export default function SlidePartenaire() {
                   </a>                  
                </div>          
                 
+             </div>
+          </div>
+        </div>
+        </div>
+        <div className="slide-holder"  >
+          <div className="partenairs_card">
+            <div className="partenairs_img">
+              <img src={ATSE} alt="" />
+            </div>
+            <div className="partenairs_content">
+              <div className="partenairs_title">
+              ATSE PHOTOVOLATAIQUE 
+              </div>
+              <div className="partenairs_sub_title">
+              ATS électricité est leader régional dans la pose de panneaux photovoltaïques
+              </div>
+              <p>
+              L'entreprise D-Facilities est un partenaire de ATSE PHOTOVOLATAIQUE
+              </p>
+              <div className="partenairs_logo_social">
+                  <div>
+                  <a href="https://www.ats-photovoltaique.com/accueil-1" className="network hover" target="_blank" rel="noreferrer" >
+                    <i className="fa fa-globe"></i>
+                  </a>                                
+               </div>                          
+             </div>
+          </div>
+        </div>
+        </div>
+        <div className="slide-holder"  >
+          <div className="partenairs_card">
+            <div className="partenairs_img">
+              <img src={USTyrosse}  alt="" />
+            </div>
+            <div className="partenairs_content">
+              <div className="partenairs_title">
+              US TYROSSE Rugby
+              </div>
+              <div className="partenairs_sub_title">
+              US Tyrosse Rugby Côte Sud
+              </div>
+              <p>
+              D-FACILITIES est partenaire Puissace XV de l’US TYROSSE Rugby
+              </p>
+              <div className="partenairs_logo_social">
+                  <div>
+                  <a href="https://ustyrosse.com/" className="network hover" target="_blank" rel="noreferrer" >
+                    <i className="fa fa-globe"></i>
+                  </a>
+                  <a href="https://www.facebook.com/ustyrosserugby/" className="network hover" target="_blank" rel="noreferrer" >
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/ustyrosserugby/" className="network hover" target="_blank" rel="noreferrer" >
+                    <i className="fab fa-linkedin"></i>
+                  </a> 
+                  <a href="https://twitter.com/ustyrosserugby" className="network hover" target="_blank" rel="noreferrer" >
+                    <i className="fab fa-twitter"></i>
+                  </a>                                    
+               </div>                          
+             </div>
+          </div>
+        </div>
+        </div>
+        <div className="slide-holder"  >
+          <div className="partenairs_card">
+            <div className="partenairs_img">
+              <img src={AVIRON}  alt="" />
+            </div>
+            <div className="partenairs_content">
+              <div className="partenairs_title">
+              AVIRON BAYONNAIS
+              </div>
+              <div className="partenairs_sub_title">
+              l’Aviron Bayonnais rugby Pro 
+              </div>
+              <p>
+              D-FACILITIES est partenaire de l’Aviron Bayonnais rugby Pro pour la saison 2022/2023
+           
+              </p>
+              <div className="partenairs_logo_social">
+                  <div>
+                  <a href="#" className="network hover" target="_blank" rel="noreferrer" >
+                  </a>                                
+               </div>                          
              </div>
           </div>
         </div>

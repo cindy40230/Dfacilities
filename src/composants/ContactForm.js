@@ -1,171 +1,104 @@
-import React from "react";
-import { useState } from "react";
-import emailjs from "emailjs-com";
-import{ init } from 'emailjs-com';
-//init("user_NXpRc712WRUax6AVxalGD");
-init("user_3uyaG8UWk8oxBdtTawPXO");
-const ContactForm = () => {
-  const [lastName, setLastName] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+import React, {useState} from "react";
+import PropTypes from "prop-types";
+import axios from "axios";
 
-  const handleSubmit = (e) => {
+
+/**
+ * @component Form
+ * @props - { object } -  config
+ */
+const ContactForm = (props) => {
+  const [mailSent, setmailSent] = useState(false);
+  const [error, setError] = useState(null);
+  const [formData, setFormData] = useState({});
+ 
+  /**
+  * @function handleFormSubmit
+  * @param e { obj } - form event
+  * @return void
+  */
+  const handleFormSubmit = e => {
     e.preventDefault();
-    let lastNameS = document.getElementById("lastname");
-    let firstNameS = document.getElementById("firstname");
-    let emailS = document.getElementById("email");
-    let messageS = document.getElementById("message");
-    let formMess = document.querySelector(".formMessage");
-
-    const isEmail = () => {
-      let isMail = document.getElementById("not-mail");
-      let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-      if (email.match(regex)) {
-        isMail.style.display = "none";
-        return true;
-      } else {
-        isMail.style.display = "block";
-        isMail.style.animation = "dongle 1s";
-        setTimeout(() => {
-          isMail.style.animation = "none";
-        }, 1000);
-        return false;
-      }
-    };
-
-    if (lastName && firstName && isEmail() && message) {
-
-      firstNameS.classList.remove("red");
-      lastNameS.classList.remove("red");
-      emailS.classList.remove("red");
-      messageS.classList.remove("red");
-
-      formMess.innerHTML = "Message en cours d'envoi...";
-      formMess.style.backgroundColor= "#ADF1C0";
-      formMess.style.color= "green";
-      formMess.style.opacity = "1";
-
-      // voir doc : https://www.emailjs.com/docs/examples/reactjs/
-      emailjs
-        .send(
-          // your service ID
-          "service_37d2mec",
-          // your template ID
-          "template_wg4guog",
-          {
-            lastName,
-            firstName,
-            email,
-            message,
-          },
-          // your user ID (protégé par .env)
-          //process.env.REACT_APP_EMAILJS_KEY
-          "167c85339e944a84d0c15faa1c8d6430"
-        )
-        .then(
-          () => {
-            formMess.innerHTML =
-              "Message envoyé ! Je vous recontacterai dès que possible.";
-
-            document.getElementById("lastname").classList.remove("error");
-            document.getElementById("firstname").classList.remove("error");
-            document.getElementById("email").classList.remove("error");
-            document.getElementById("message").classList.remove("error");
-            setFirstName("");
-            setLastName("");
-            setEmail("");
-            setMessage("");
-
-            setTimeout(() => {
-              formMess.style.opacity = "0";
-            }, 5000);
-          },
-          (err) => {
-            console.log(err);
-            formMess.style.color = "red";
-            formMess.style.backgroundColor= "#ffad7db9";
-            formMess.innerHTML =
-              "Une erreur s'est produite, veuillez réessayer.";
-          }
-        );
-    } else {
-      formMess.innerHTML = "Merci de remplir correctement les champs requis *";
-      formMess.style.color= "red";
-      formMess.style.backgroundColor= "#ffad7db9";
-      formMess.style.opacity = "1";
-
-      if (!lastName) {
-        lastNameS.classList.add("error");
-      }
-      if (!firstName) {
-        firstNameS.classList.add("error");
-      }
-      if (!email) {
-        emailS.classList.add("error");
-      }
-      if (!message) {
-        messageS.classList.add("error");
-      }
-    }
+    axios({
+      method: "post",
+      url: "https://cindy-ruet.fr/api/contact/index.php",
+      headers: { "content-type": "application/json" },
+      data: formData
+    })
+      .then(result => {
+        if (result.data.sent) {
+          setmailSent(result.data.sent)
+          setError(false)
+        } else {
+          setError(true)
+        }
+      })
+      .catch(error => setError( error.message ));
+  };
+  /**
+    * @function handleChange
+    * @param e { obj } - change event
+    * @param field { string } - namve of the field
+    * @return void
+    */
+   const handleChange = (e, field) => {
+    let value = e.target.value;
+    setFormData({
+      ...formData,
+      [field]: value,
+    });
   };
 
-  return (
-    <form className="contact-form" >
-      <h3>Contactez-nous!</h3>
-      <p className="text" >Que vous soyez professionnel ou particulier, n’hésitez pas à contacter D-facilities, votre expert pour le nettoyage et ses services associés.</p>
-      <div className="form-content">
-        
-        <input
-            type="text"
-            id="lastname"
-            name="lastname"
-            required
-            onChange={(e) => setLastName(e.target.value)}
-            placeholder="Votre nom *"
-            value={lastName}
-          />
-          <input
-            type="text"
-            id="firstname"
-            name="firstname"
-            required
-            onChange={(e) => setFirstName(e.target.value)}
-            placeholder="Votre prénom *"
-            value={firstName}
-          />
-
-        <div className="email-content">
-          <label id="not-mail">Email non valide</label>
-          <input
-            type="mail"
-            id="email"
-            name="email"
-            required
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Votre email *"
-            value={email}
-          />
+    const { title,description, successMessage, errorMessage, fieldsConfig } = props.config;
+    return (
+      <div className="contact-form">
+        <div className="contact-form__header">
+            <h3>{title}</h3>
+            <p>{description}</p>
         </div>
-        <textarea
-          id="message"
-          name="message"
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Votre message *"
-          value={message}
-          required
-        />
+      <div className="contact-form__container">
+        <div>
+          <form action="#">
+          <div className="form-content">
+            {fieldsConfig &&
+              fieldsConfig.map(field => {
+                return (
+                  <React.Fragment key={field.id}>
+                    {field.type !== "textarea" ? (
+                      <React.Fragment>
+                      
+                        <input
+                          type={field.type}
+                          className={field.klassName}
+                          placeholder={field.placeholder}
+                          value={field.name}
+                          onChange={e => handleChange(e, field.fieldName)}
+                        />
+                      </React.Fragment>
+                    ) : (
+                      <React.Fragment>
+                        
+                        <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
+                      </React.Fragment>
+                    )}
+                  </React.Fragment>
+                );
+              })}
+              </div>
+            <input type="submit" onClick={e => handleFormSubmit(e)} value="Envoyer"  className=" hover button2"/>
+            <div >
+              {mailSent && <div className="sucsess">{successMessage}</div>}
+              {error && <div className="error">{errorMessage}</div>}
+            </div>
+          </form>
+        </div>
+        </div>
       </div>
-      <input
-        className=" hover button2"
-        type="submit"
-        value="envoyer"
-        onClick={(e) => handleSubmit(e)}
-      />
-      <div className="formMessage"></div>
-    </form>
-  );
-};
+    );
+}
 
 export default ContactForm;
+//propTypes for the component
+ContactForm.propTypes = {
+  config: PropTypes.object.isRequired
+};

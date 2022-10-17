@@ -55,6 +55,11 @@
   }
 
 /******************SECTION ENTREPRISE****************/
+.fond{
+  background-image: url(../../assets/images/FOND2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #avis{
   max-width: 80%;
   margin: 10% auto;
@@ -67,9 +72,9 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
-  background-image: url(../../assets/images/FOND2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url(../../assets/images/FOND2.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
  
   .description p {
     font-size: 1.1rem;
@@ -83,7 +88,7 @@
 /******************SECTION PRESTATION****************/
 
 #prestation {
-  
+  background: transparent;
   max-width: 80%;
   min-height: auto ;
   margin: 100px auto 0;

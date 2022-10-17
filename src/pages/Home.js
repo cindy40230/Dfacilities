@@ -11,6 +11,7 @@ export default function Home() {
     <>
       <main>
         <Loop />
+        <div className="fond">
         <section id="entreprise">
           <h2>L'entreprise</h2>
           <div className="description">
@@ -45,7 +46,7 @@ export default function Home() {
           <h2>Nos prestations</h2>
           <div className="pictures">
             <div className="flip-box">
-              <a href="/entretien-courant" title="liens vers la fiche entretien courant">
+              <NavLink to="/entretien-courant" exact title="liens vers la fiche entretien courant">
                 <div className="flip-box-inner">
                   <div className="flip-box-front">
                     <p>Entretien courant</p>
@@ -64,10 +65,10 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </a>
+              </NavLink>
             </div>
             <div className="flip-box">
-              <a href="/nettoyage-de-vitre"  title="liens vers la fiche nettoyage de vitre">
+              <NavLink to="/nettoyage-de-vitre" exact title="liens vers la fiche nettoyage de vitre">
                 <div className="flip-box-inner">
                   <div className="flip-box-front">
                     <p>entretien vitrerie</p>
@@ -80,10 +81,10 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </a>
+              </NavLink>
             </div>
             <div className="flip-box">
-              <a href="/nettoyage-panneau"  title="liens vers la fiche nettoyage panneau photovoltaique">
+              <NavLink to="/nettoyage-panneau" exact title="liens vers la fiche nettoyage panneau photovoltaique">
                 <div className="flip-box-inner">
                   <div className="flip-box-front">
                     <p>entretien de panneau photovoltaique</p>
@@ -96,10 +97,10 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </a>
+              </NavLink>
             </div>
             <div className="flip-box">
-              <a href="/remise-en-etat"  title="liens vers la fiche remise en état">
+              <NavLink to="/remise-en-etat" exact title="liens vers la fiche remise en état">
                 <div className="flip-box-inner">
                   <div className="flip-box-front">
                     <p>remise en etats</p>
@@ -116,10 +117,10 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </a>
+              </NavLink>
             </div>
             <div className="flip-box">
-              <a href="/desinfection" title="liens vers la fiche désinfection covid19">
+              <NavLink to="/desinfection"  exact title="liens vers la fiche désinfection covid19">
                 <div className="flip-box-inner">
                   <div className="flip-box-front">
                     <p>Desinfection covid19</p>
@@ -135,7 +136,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </a>
+              </NavLink>
             </div>
           </div>
           <NavLink to="/devis" exact className="hover btn" title="lien vers la page de demande de devis" >
@@ -146,6 +147,7 @@ export default function Home() {
           <h2>Ils m'ont fait confiance</h2>
           <div className="elfsight-app-1ca32861-3bd9-4979-9337-5b0f79cfb661"></div>
         </section>
+        </div>
       </main>
     </>
   );

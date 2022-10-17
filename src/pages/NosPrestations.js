@@ -379,14 +379,9 @@ export const NettoyagePanneau = () => {
                 <p data-aos="fade-right">
                 La technique et l’expérience !
                  <br />
-                 Nous nettoyons aussi les panneaux photovoltaïques pour garantir une meilleure efficacité et donc rentabilité.<br/>
+                 Nous nettoyons aussi les panneaux photovoltaïques pour garantir une meilleure efficacité et donc rentabilité.Dans une période de crise énergétique, il est essentiel de pouvoir tirer profit à 100% de son installation. <br/> <br/>
                  Nous disposont du matériel adéquat, des techniques et les produits nécessaires pour livrer des travaux de la meilleure qualité dans les meilleurs délais..
-                  <br /><br />Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus id, modi facere nostrum maiores rem animi ipsum quaerat nesciunt explicabo fuga quis commodi, fugiat consequatur 
- <br /> 
                   <br />
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, rem numquam iste quam, qui cupiditate aliquid ipsum unde eius omnis sunt illum officia! Labore repellat modi tempora id? Tempora, adipisci!
-                  <br/><br />
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolorum repellendus adipisci vel cumque, tempore doloremque debitis magnam vitae quidem dolore inventore dicta nisi nesciunt voluptatem aliquam non, distinctio officiis! 
                 </p>
                 <img src={Panneau2} alt="représente un nettoyage de panneau solaire" />
               </div>
@@ -403,11 +398,12 @@ export const NettoyagePanneau = () => {
                 <div className="entretien_body_content_text">
                   <img src={Panneau1} alt="représente un nettoyage de vitre en hauteur en nacelle" data-aos="zoom-in" />
                   <p data-aos="fade-down-left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime modi ab minima aut voluptate, nostrum iusto! Itaque quo vel veritatis saepe ut a nesciunt, est tempora, eligendi temporibus officia. <br />
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, odio sunt eos fuga labore cumque? <br />{" "}
-                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, itaque dolorum esse cum odit distinctio. <br /><br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad officiis et, magni voluptatum veritatis?
-                    <br /> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, ex! <span>Lorem, ipsum.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit hic possimus dolor quod voluptatem molestiae.
+                  Nous disposons d’une technologie unique. Un système H2O, un système permettant de créer une eau pure. L’eau pure étant le plus puissant des détergent, tout cela dans un respect écologique. 
+Notre système autonome, muni de brosses spécifiques pour vos panneaux, d’une perche en carbone de plus de 9m, vous garanti un résultat exceptionnel. 
+ <br />{" "}
+ N’hésitez pas à nous contacter, afin que nous puissions vous accompagner.
+ <br /><br />
+ Notre partenaire : <a href="https://www.ats-photovoltaique.com/accueil-1">ATSE Photovoltaïque </a> , pourra le cas échéant, vous accompagner sur vos futurs projets photovoltaïques.  
                   </p>
                 </div>
               </div>

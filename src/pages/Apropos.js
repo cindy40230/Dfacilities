@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import SlideApropos from "../composants/SlideApropos";
-import NouvelleAquitaine from "../assets/images/region2.png";
+import SudOuest from "../assets/images/SudOuest.png";
 import SlidePartenaire from "../composants/SlidePartenaire";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -58,16 +58,15 @@ export const NosDomaine = () => {
         <div className="a-propos-main">
           <div className="a-propos-content">
             <h1>Nos Domaines D'activité</h1>
-            <p>Nouvelle-Aquitaine ,Toulouse et ses alentours</p>
+            <p>Tout le Sud-Ouest</p>
           </div>
           <div className="a-propos-text-content" data-aos="zoom-in">
             <div className="contente_domaine">
               <div className="cadre_domaine">
                 <div className="Ddomaine">
-                  <img src={NouvelleAquitaine} alt="carte de la nouvelle aquitaine" />
+                  <img src={SudOuest} alt="carte de la nouvelle aquitaine" />
                   <p>
-                    Nous avons la capacité d'intervenir sur toute la
-                    Nouvelle-Aquitaine mais aussi sur Toulouse et ses alentours.
+                    Nous avons la capacité d'intervenir sur toutle Sud-Ouest.
                   </p>
                 </div>
               </div>
