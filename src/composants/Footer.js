@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import LogoBlanc from "../assets/images/logoblanc.png";
 import Fep from "../assets/images/FEP_CSO.png";
 export default function Footer() {
@@ -14,11 +15,11 @@ export default function Footer() {
         <div className="footer">
         <img src={LogoBlanc} alt="logo Dfacilities Blanc" />
           <div className="footer-menu">
-            <a href="/" title="liens vers la page d'accueil">L'entreprise</a>
-            <a href="/qui-sommes-nous" title="liens vers qui sommes nous">Qui sommes nous</a>
-            <a href="/nos-prestations" title="liens vers la page d'accueil de nos prestations">Nos prestations</a>
-            <a href="/actualite" title="liens vers la page d'accueil de nos actualités">Actualite</a>
-            <a href="/contact" title="liens vers la page de contact">contact</a>
+            <NavLink to="/"  exact title="liens vers la page d'accueil">L'entreprise</NavLink>
+            <NavLink  to="/qui-sommes-nous" exact title="liens vers qui sommes nous">Qui sommes nous</NavLink>
+            <NavLink to="/nos-prestations" exact title="liens vers la page d'accueil de nos prestations">Nos prestations</NavLink>
+            <NavLink to ="/actualite" exact title="liens vers la page d'accueil de nos actualités">Actualite</NavLink>
+            <NavLink to="/contact" exact title="liens vers la page de contact">contact</NavLink>
           </div>    
           <div className="address">
             <div className="container">
@@ -55,7 +56,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="line"></div>
-            <a href="/mentions" title="lien vers les mentions légales">Mentions Légales et Vie Privée</a>
+            <NavLink to="/mentions" exact title="lien vers les mentions légales">Mentions Légales et Vie Privée</NavLink>
           </div>      
         </div>  
         <p className="copy"> &copy;2022 Ruet cindy tout droits réservés</p>
