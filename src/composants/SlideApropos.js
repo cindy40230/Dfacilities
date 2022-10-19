@@ -2,23 +2,10 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.css";
 import { Carousel } from "react-responsive-carousel";
 import Objectifs from "../assets/images/objectif.jpg";
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
-import { getEquipe } from "../redux/equipe/equipeReducer";
 import David from '../assets/images/David.jpg';
 
 export default function SlideApropos() {
-  const { equipe } = useSelector((state) => ({
-    ...state.equipeReducer,
-  }));
-
-  const dispatch = useDispatch();
-  useEffect(() => {
-    if (equipe.length === 0) {
-      dispatch(getEquipe());
-    }
-    console.log(equipe);
-  });
+ 
 
   return (
     <div>
@@ -46,13 +33,16 @@ export default function SlideApropos() {
               <img src={Objectifs} alt="" />
             </div>
             <p>
-            Créée par <span className="span-apropos">David SOURIGUES  </span>, en Septembre 2020, la société D-FACILITIES est une entreprise de propreté et de services associés, installée sur la commune de Saint Geours de Maremne dans les Landes. 
-                    Néanmoins D-FACILITIES possède des subdivisions sur les départements 64, 33 et 31.<br />
-              
+              Recentrer l’humain au cœur de nos prestations. Notre force découle
+              de l’épanouissement et de l’investissement de chacun de nos
+              collaborateurs au travers de leur fidélisation. Avec nos clients
+              Nous avons à cœur de créer, une relation unique, basée sur la
+              communication, la réactivité et la satisfaction commune. <br />
               <br />
-              Son ancrage local, source de son identité, lui permet d’articuler ses prestations, et de mettre à disposition son expertise ainsi que ses compétences sur tout le Sud-ouest, ce qui lui permet de garantir proximité et réactivité. 
-              D-FACILITIES, propose à tous les professionnels, une gamme de prestations de nettoyage et d’entretien complète. 
-
+              <span className="span-apropos">Notre but ? </span>
+              <br />
+              S’adapter aux spécificités de vos sites afin de satisfaire chacune
+              de vos demandes.
             </p>
           </div>
         </div>

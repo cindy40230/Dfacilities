@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 import Logo from '../assets/images/LogoOFFICIEL1.svg';
 export default function Navigation() {
-
+ 
   return (
 
     <header id="header">

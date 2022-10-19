@@ -14,18 +14,6 @@ import USTyrosse from '../assets/images/us_rugby.png';
 import AVIRON from '../assets/images/AVIRON.png';
 export default function SlidePartenaire() {
 
-  const { partenaires } = useSelector((state) => ({
-    ...state.partenaireReducer,
-  }));
-
-  const dispatch = useDispatch();
-  useEffect(() => {
-    if (partenaires.length === 0) {
-      dispatch(getPartenaires());
-    }
-    console.log(partenaires);
-  });
- 
 
   return (
     <div>

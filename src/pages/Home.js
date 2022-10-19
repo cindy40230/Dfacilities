@@ -16,29 +16,12 @@ export default function Home() {
           <h2>L'entreprise</h2>
           <div className="description">
             <p>
-              D-Facilities, est une entreprise <span>Basco-Landaise</span> de
-              nettoyage et de propreté, intervenant sur toute
-              <span> la Nouvelle-Aquitaine</span> , mais aussi sur Toulouse et
-              ses alentours.
+              Créée par <span>David SOURIGUES</span>, en Septembre 2020, la société <span>D-FACILITIE</span> est une entreprise de propreté et de services associés, installée sur la commune de Saint Geours de Maremne dans les Landes. 
+              Néanmoins D-FACILITIES possède des subdivisions sur les départements 64, 33 et 31.       
               <br />
-              <span>Notre Cœur de métier ?</span> Vous apportez satisfaction,
-              avec proximité et professionnalisme en plaçant l’humain au cœur de
-              nos prestations.
-              <br />
-              <span>​ Notre force ? </span>Vous proposez une gamme complète de
-              prestations, et priorisez les circuits et acteurs locaux.
-              <span>
-                <br /> Notre engagement ?
-              </span>{" "}
-              Proximité et réactivité. Aussi, nous mettons à votre disposition
-              tous les outils (dématérialisation, espace client, contrôle du
-              chantier numérique, outils de liaisons en ligne, …) utilisés par
-              les plus gros groupes français de nettoyage et de propreté, dans
-              une dimension locale et humaine.
-              <br />
-              Chez D-Facilities, nos clients et nos équipes ne font qu’un.{" "}
-              <span>Un travail d’équipe, </span> au service de la satisfaction
-              commune.
+              Son ancrage local, source de son identité, lui permet d’articuler ses prestations, et de mettre à disposition son expertise ainsi que ses compétences sur <span>tout le Sud-ouest,</span>  ce qui lui permet de garantir proximité et réactivité. 
+D-FACILITIES, propose à tous les professionnels, une gamme de prestations de nettoyage et d’entretien complète. <br />
+              
             </p>
           </div>
         </section>
@@ -84,7 +67,7 @@ export default function Home() {
               </NavLink>
             </div>
             <div className="flip-box">
-              <NavLink to="/nettoyage-panneau" exact title="liens vers la fiche nettoyage panneau photovoltaique">
+              <NavLink to="nettoyage-de-panneau" exact title="liens vers la fiche nettoyage panneau photovoltaique">
                 <div className="flip-box-inner">
                   <div className="flip-box-front">
                     <p>entretien de panneau photovoltaique</p>

@@ -19,6 +19,8 @@ const ContactForm = (props) => {
   */
   const handleFormSubmit = e => {
     e.preventDefault();
+   
+
     axios({
       method: "post",
       url: "https://cindy-ruet.fr/api/contact/index.php",
@@ -73,6 +75,7 @@ const ContactForm = (props) => {
                           placeholder={field.placeholder}
                           value={field.name}
                           onChange={e => handleChange(e, field.fieldName)}
+                          required
                         />
                       </React.Fragment>
                     ) : (
