@@ -11,6 +11,7 @@ const ContactForm = (props) => {
   const [mailSent, setmailSent] = useState(false);
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({});
+  
  
   /**
   * @function handleFormSubmit
@@ -19,7 +20,7 @@ const ContactForm = (props) => {
   */
   const handleFormSubmit = e => {
     e.preventDefault();
-   
+   // console.log(formData.email);
 
     axios({
       method: "post",

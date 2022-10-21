@@ -122,13 +122,21 @@ height: 100%;
       margin: 0 auto;   
       .Ddomaine{
         img{
-          width: 40%;
+          width: 80%;
+          margin: 5px;
         }
       }
-      .domaine_competence{
-        text-align: center;
-        width: 100%;
-        margin-top: 50px;
+      
+    }
+    .domaine_competence{
+      text-align: center;
+      width: 90%;
+      margin-top: 50px;
+      h2{
+        font-size: 15px;
+      }
+      ul{
+        display: block;
       }
     }
   }

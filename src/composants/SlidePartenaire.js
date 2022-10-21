@@ -1,10 +1,8 @@
 
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.css";
 import { Carousel } from "react-responsive-carousel";
-import { getPartenaires } from "../redux/partenaires/partenaireReducer";
+
 
 import Resovalie from '../assets/images/resovalie_Logo-business-club.png';
 import Fep from '../assets/images/FEP_CSO.png';
@@ -47,13 +45,13 @@ export default function SlidePartenaire() {
               </p>
               <div className="partenairs_logo_social">
                   <div>
-                  <a href="https://resovalie.fr/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://resovalie.fr/" className="network hover" target="_blank" rel="noreferrer" title="lien vers le site resovalie" >
                     <i className="fa fa-globe"></i>
                   </a>
-                  <a href="https://www.facebook.com/resovalie/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.facebook.com/resovalie/" className="network hover" target="_blank" rel="noreferrer" title="lien vers la page facebook resovalie" >
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.linkedin.com/company/resovalie/?originalSubdomain=fr" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.linkedin.com/company/resovalie/?originalSubdomain=fr" className="network hover" target="_blank" rel="noreferrer" title="lien vers le linkedin de resovalie">
                     <i className="fab fa-linkedin"></i>
                   </a>                 
                </div>             
@@ -80,16 +78,16 @@ export default function SlidePartenaire() {
               </p>
               <div className="partenairs_logo_social">
                   <div>
-                  <a href="https://www.monde-proprete.com/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.monde-proprete.com/" className="network hover" target="_blank" rel="noreferrer" title="lien vers le site de la fédération des entreprises de propreté">
                     <i className="fa fa-globe"></i>
                   </a>
-                  <a href="https://www.facebook.com/mondedelaproprete/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.facebook.com/mondedelaproprete/" className="network hover" target="_blank" rel="noreferrer" title="lien vers la page de facebook fep">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.instagram.com/mondedelaproprete/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.instagram.com/mondedelaproprete/" className="network hover" target="_blank" rel="noreferrer" title="lien vers le instagram de fep">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a href=" https://twitter.com/FedeProprete" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href=" https://twitter.com/FedeProprete" className="network hover" target="_blank" rel="noreferrer" title="lien vers le twitter de fep" >
                     <i className="fab fa-twitter"></i>
                   </a>                 
                </div>          
@@ -115,16 +113,16 @@ export default function SlidePartenaire() {
               </p>
               <div className="partenairs_logo_social">
                   <div>
-                  <a href="https://www.lsmenuiserie.fr/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.lsmenuiserie.fr/" className="network hover" target="_blank" rel="noreferrer" title="lien vers le site de LS Menuiserie  ">
                     <i className="fa fa-globe"></i>
                   </a>
-                  <a href="https://www.facebook.com/LSMenuiserie33/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.facebook.com/LSMenuiserie33/" className="network hover" target="_blank" rel="noreferrer" title="lien vers la page facebook de LS Menuiserie  " >
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/ls-menuiserie-8787a0217/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.linkedin.com/in/ls-menuiserie-8787a0217/" className="network hover" target="_blank" rel="noreferrer" title="lien vers le linkedin de LS Menuiserie  " >
                     <i className="fab fa-linkedin"></i>
                   </a> 
-                  <a href="https://www.instagram.com/lsmenuiserie/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.instagram.com/lsmenuiserie/" className="network hover" target="_blank" rel="noreferrer" title="lien vers le instagram de LS Menuiserie  " >
                     <i className="fab fa-instagram"></i>
                   </a>                  
                </div>          
@@ -150,7 +148,7 @@ export default function SlidePartenaire() {
               </p>
               <div className="partenairs_logo_social">
                   <div>
-                  <a href="https://www.ats-photovoltaique.com/accueil-1" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.ats-photovoltaique.com/accueil-1" className="network hover" target="_blank" rel="noreferrer" title="lien vers le site de ATSE PHOTOVOLATAIQUE  ">
                     <i className="fa fa-globe"></i>
                   </a>                                
                </div>                          
@@ -175,16 +173,16 @@ export default function SlidePartenaire() {
               </p>
               <div className="partenairs_logo_social">
                   <div>
-                  <a href="https://ustyrosse.com/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://ustyrosse.com/" className="network hover" target="_blank" rel="noreferrer" title="lien vers le site de US TYROSSE Rugby">
                     <i className="fa fa-globe"></i>
                   </a>
-                  <a href="https://www.facebook.com/ustyrosserugby/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.facebook.com/ustyrosserugby/" className="network hover" target="_blank" rel="noreferrer" title="lien vers la page facebook de US TYROSSE Rugby">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://www.linkedin.com/company/ustyrosserugby/" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://www.linkedin.com/company/ustyrosserugby/" className="network hover" target="_blank" rel="noreferrer" title="lien vers le linkedin de US TYROSSE Rugby">
                     <i className="fab fa-linkedin"></i>
                   </a> 
-                  <a href="https://twitter.com/ustyrosserugby" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="https://twitter.com/ustyrosserugby" className="network hover" target="_blank" rel="noreferrer" title="lien vers le twitter de US TYROSSE Rugby" >
                     <i className="fab fa-twitter"></i>
                   </a>                                    
                </div>                          
@@ -210,7 +208,7 @@ export default function SlidePartenaire() {
               </p>
               <div className="partenairs_logo_social">
                   <div>
-                  <a href="#" className="network hover" target="_blank" rel="noreferrer" >
+                  <a href="#" className="network hover" target="_blank" rel="noreferrer" title=" ">
                   </a>                                
                </div>                          
              </div>

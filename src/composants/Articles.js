@@ -25,7 +25,7 @@ export default function Articles() {
                 <p>
                 {articleDetail.description.substr(1,130)}
                 </p>
-                <a href="/" className="btn" >
+                <a href="/" className="btn" alt="lire le suite de l'article" title="lien vers la suite de l'article">
                   Lire la suite<i class="fa fa-arrow-right"></i>
                 </a> 
                      

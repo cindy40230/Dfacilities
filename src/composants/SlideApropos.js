@@ -52,7 +52,7 @@ export default function SlideApropos() {
                 <h2>L'équipe</h2>
 
                 <div className="equipe_content">
-                  <div>
+                  <div className="equipe_content_img">
                     <img src={David} alt="represente l'équipier"/>
                     <p>
                       <span className="span-apropos">
@@ -63,7 +63,7 @@ export default function SlideApropos() {
                   </div>
                   <div>
                     <p>
-                    « Ce qui m’a toujours animé, c’est de pouvoir conjuguer proximité sociale, avec mes collaborateurs et mes clients, ainsi que réactivité et professionnalisme. J’ai à cœur de démontrer que le social, n’est pas incompatible avec la gestion inhérente à notre métier. La valorisation de notre métier, ainsi que l’amélioration du cadre de travail de mes collaborateurs et au cœur de mes préoccupations. Mon engagement au sein de la Fédération des entreprises de propreté, va évidemment dans ce sens. J’ai également à cœur, d’investir continuellement dans de nouvelles technologie, accentuant nos résultats sur les interventions, mais également nous permettant d’accroitre notre réactivité lors de demandes urgentes. La propreté est un métier à 1001 facettes, le rendant passionnant. Je pense que nous sommes les acteurs de l’épanouissement de nos clients et de leur collaborateurs, leur permettant d’évoluer professionnellement dans des locaux propres.<span className="span-apropos"> David SOURIGUES</span>»
+                    « Ce qui m'a toujours animé, c'est de pouvoir conjuguer proximité sociale, avec mes collaborateurs et mes clients, ainsi que réactivité et professionnalisme. J'ai à cœur de démontrer que le social, n'est pas incompatible avec la gestion inhérente à notre métier. La valorisation de notre métier, ainsi que l'amélioration du cadre de travail de mes collaborateurs et au cœur de mes préoccupations. Mon engagement au sein de la Fédération des entreprises de propreté, va évidemment dans ce sens. J'ai également à cœur, d'investir continuellement dans de nouvelles technologies, accentuant nos résultats sur les différentes interventions, mais cela nous permet également d'accroitre notre réactivité lors de demandes urgentes. La propreté est un métier à 1001 facettes, ce qui le rend vivant et passionnant. Je pense sincèrement que nous sommes les acteurs de l'épanouissement de nos clients et de leurs collaborateurs, leur permettant d'évoluer dans des locaux propres.<span className="span-apropos"> David SOURIGUES</span>»
                     </p>
                   </div>
                 </div>
