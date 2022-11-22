@@ -35,10 +35,9 @@ export const Mentions = () => {
                 <br />
                 Il a été créé par : Cindy Ruet N° SIRET:90916053300016 rcs DAX
                 <br />
-                L'hébergement est assuré par xxxxxxxxxxxxx.
+                L'hébergement est assuré par mon-hebergement.fr.
                 <br />
-                <br />
-                Adresse de l' hébergeur: {" "}
+                
               </p>
 
               <p>

@@ -17,7 +17,7 @@ export default function Contact() {
  * fieldsConfig = settings for each input/textarea field
  */
  const config = {
-  api: "https://cindy-ruet.fr/api/contact/index.php",
+  api: "https://dfacilities.fr/api/contact/index.php",
   title: 'Contactez-nous !',
   description: 'Que vous soyez professionnel ou particulier, n’hésitez pas à contacter D-facilities, votre expert pour le nettoyage et ses services associés.',
   successMessage: 'Message envoyé ! Je vous recontacterai dès que possible.',
@@ -55,8 +55,7 @@ export default function Contact() {
             <NavLink to="/devis" exact className="hover btn" title="lien vers la page de demande de devis" >
             Demander votre devis!
             </NavLink>
-            {/* <a href="/dfacilities/devis" title="lien vers la page de demande de devis" className="btn"> Demander votre devis!</a> */}
-          </div>
+                     </div>
           </div>
         </div>
         </main>

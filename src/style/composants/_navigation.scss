@@ -112,6 +112,8 @@ nav {
 		display: none;
 	}
 }
+
+
 .logo_img {
 	box-shadow: 1px 1px 8px #8d8d8d;
 	width: 120px;
@@ -140,14 +142,19 @@ input#burger {
 			ul {
 				margin-top: 0px;
 			}
+			
 		}
 		>ul {
 			background-color: transparent;
 		}
+		
+		
 	}
+	
 }
 @media (max-width: 968px) {
 	nav {
+	
 		ul {
 			display: block;
 			width: 100%;

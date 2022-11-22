@@ -16,7 +16,7 @@ export default function Devis() {
  * fieldsConfig = settings for each input/textarea field
  */
  const config = {
-  api: "https://cindy-ruet.fr/api/devis/index.php",
+  api: "https://dfacilities.fr/api/devis/index.php",
   title: 'Demandez votre devis !',
   description: 'Que vous soyez professionnel ou particulier, n’hésitez pas à contacter D-facilities, votre expert pour le nettoyage et ses services associés.',
   successMessage: 'Message envoyé ! Je vous recontacterai dès que possible.',
